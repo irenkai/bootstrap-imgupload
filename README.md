@@ -7,7 +7,7 @@ Small jquery plugin for uploading images in base_64
 
 Just pass the values through data-loadtarget and data-path
 
-<pre> href="#" class="img-upload" data-loadtarget='where_will_the_img_load(ej:previeImg)'  data-path="reciever"</pre>
+<pre> href="#" class="img-upload" data-loadtarget='path/to/send/the/image'  data-path="reciever"</pre>
 
 And initialize it like 
 
