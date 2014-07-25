@@ -7,7 +7,7 @@ Small jquery plugin for uploading images in base_64
 
 Just pass the values through data-loadtarget and data-path
 
-<a href="#" class="btn-round pull-right btn-blue  img-upload" data-loadtarget='where_will_the_img_load' data-max='0' data-path="reciever" >+</a>
+<pre><a href="#" class="btn-round pull-right btn-blue  img-upload" data-loadtarget='where_will_the_img_load' data-max='0' data-path="reciever" >+</a></pre>
 
 And initialize it like 
 
