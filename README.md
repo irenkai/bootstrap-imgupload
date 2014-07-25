@@ -7,7 +7,7 @@ Small jquery plugin for uploading images in base_64
 
 Just pass the values through data-loadtarget and data-path
 
-<pre> href="#" class="img-upload" data-loadtarget='where_will_the_img_load'  data-path="reciever"</pre>
+<pre> href="#" class="img-upload" data-loadtarget='where_will_the_img_load(ej:previeImg)'  data-path="reciever"</pre>
 
 And initialize it like 
 
@@ -17,8 +17,8 @@ $('.img-upload').imgUpload({
 
 *******************************
 PHP RECIEVER
-
-public function previewImg(){
+<pre>
+function previewImg(){
 		$file_temp = '_'.md5(date('YmdHis').rand(1,9999999)).'.jpg';
 		$file_temp_name = 'ORIGINAL' . $file_temp;
 		$file_target =  $_SERVER['DOCUMENT_ROOT']. '/uploads/'.$file_temp;
@@ -28,4 +28,4 @@ public function previewImg(){
     	fclose($ifp); 
     	echo json_encode(array('img'=>array($file_temp)));
 		
-}
+}</pre>
